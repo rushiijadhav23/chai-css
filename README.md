@@ -1,6 +1,6 @@
 # ☕ chai CSS
 
-A warm, lightweight utility CSS library - **no stylesheets, no build step, no npm required**.  
+A warm, lightweight utility CSS library. 
 Just drop one `<script>` tag in your HTML, add `chai-` classes to your elements, and styles get injected directly via JavaScript.
 
 ---
