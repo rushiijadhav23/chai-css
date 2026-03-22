@@ -1,9 +1,3 @@
-/**
- *  ☕ chai.js
- *  A warm little utility CSS library — no stylesheets, just vibes.
- *  Drop this script in your HTML and use chai- classes directly.
- */
-
 (() => {
 
   // ─────────────────────────────────────────
@@ -207,8 +201,7 @@
     "chai-truncate":  "white-space: nowrap; overflow: hidden; text-overflow: ellipsis",
   };
 
-  // ─────────────────────────────────────────
-  //  CORE ENGINE
+
   // ─────────────────────────────────────────
 
   function applyStyles(el) {
@@ -255,8 +248,6 @@
     },
   };
 
-  // ─────────────────────────────────────────
-  //  AUTO INIT
   // ─────────────────────────────────────────
 
   if (document.readyState === "loading") {
