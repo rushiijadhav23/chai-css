@@ -31,12 +31,6 @@ Download `chai.js`, place it next to your HTML file, and add:
 <script src="./chai.js"></script>
 ```
 
-<!-- **Option 2 - CDN (once published)**
-
-```html
-<script src="https://unpkg.com/chai-css/dist/chai.min.js"></script>
-``` -->
-
 Then just use classes in your HTML - no other setup needed:
 
 ```html
@@ -511,36 +505,6 @@ The playground lets you type any `chai-` classes (space separated) into an input
 Input:  chai-bg-brown chai-text-white chai-p-6 chai-rounded-lg
 Result: Preview box updates live with those styles
 ```
-
----
-
-## Project Structure
-
-```
-chai-css/
-├── src/
-│   └── chai.js       ← source file (readable, commented)
-├── dist/
-│   └── chai.min.js   ← minified build for production
-├── index.html        ← demo landing page
-├── package.json      ← npm package config
-└── README.md         ← you are here
-```
-
----
-
-<!-- ## Warin
-
-**Inline styles have high specificity.**  
-Since chai CSS injects styles directly via `element.style`, they will override any styles coming from a regular stylesheet. This is intentional - chai CSS is designed to be the single source of truth for styling when you use it.
-
-**No hover or focus states.**  
-Pseudo-classes like `:hover` and `:focus` cannot be applied via `element.style`. If you need hover effects, handle them with JS event listeners or write a small `<style>` block for those specific cases.
-
-**Dark mode requires a full reset.**  
-Because inline styles are additive, toggling dark mode requires clearing `style.cssText` on all chai elements before re-scanning. The recommended pattern is shown in the dark mode section above.
-
---- -->
 
 ## License
 
