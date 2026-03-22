@@ -529,7 +529,7 @@ chai-css/
 
 ---
 
-## Caveats
+<!-- ## Warin
 
 **Inline styles have high specificity.**  
 Since chai CSS injects styles directly via `element.style`, they will override any styles coming from a regular stylesheet. This is intentional - chai CSS is designed to be the single source of truth for styling when you use it.
@@ -540,7 +540,7 @@ Pseudo-classes like `:hover` and `:focus` cannot be applied via `element.style`.
 **Dark mode requires a full reset.**  
 Because inline styles are additive, toggling dark mode requires clearing `style.cssText` on all chai elements before re-scanning. The recommended pattern is shown in the dark mode section above.
 
----
+--- -->
 
 ## License
 
