@@ -1,0 +1,501 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>☕ chai CSS</title>
+  </head>
+
+  <body class="chai-body">
+
+    <!-- ── NAV ─────────────────────────── -->
+    <nav class="chai-sticky chai-z-50 chai-bg-cream chai-border-b chai-py-3">
+      <div class="chai-container chai-flex chai-justify-between chai-items-center">
+        <span class="chai-font-bold chai-text-brown chai-text-md">☕ chai css</span>
+        <div class="chai-flex chai-gap-3 chai-items-center">
+          <a href="#classes" class="chai-text-sm chai-text-muted chai-no-underline chai-cursor-pointer">Classes</a>
+          <a href="#playground" class="chai-text-sm chai-text-muted chai-no-underline chai-cursor-pointer">Playground</a>
+          <button id="darkBtn" class="chai-btn chai-btn-sm chai-btn-primary chai-transition">🌙 Dark</button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ── HERO ────────────────────────── -->
+    <section class="chai-section chai-text-center">
+      <div class="chai-container">
+        <span class="chai-badge-warm chai-mb-4">☕ v1.0 - fresh brew</span>
+        <h1 class="chai-text-2xl chai-font-bold chai-text-dark chai-mb-4">
+          Style karo, CSS mat likho.
+        </h1>
+        <p class="chai-text-md chai-text-muted chai-mb-8" style="max-width: 520px; margin-left: auto; margin-right: auto;">
+          chai CSS ek lightweight utility library hai - sirf ek
+          <span class="chai-code">chai.js</span> file, koi stylesheet nahi, koi build step nahi.
+          Class lagao, style milega. ☕
+        </p>
+
+        <div class="chai-flex chai-justify-center chai-gap-4 chai-flex-wrap chai-mb-8">
+          <button class="chai-btn chai-btn-primary chai-transition chai-shadow">Get Started</button>
+          <button class="chai-btn chai-btn-outline chai-transition">GitHub ↗</button>
+        </div>
+
+        <!-- Code snippet -->
+        <div class="chai-card" style="max-width: 480px; margin: 0 auto; text-align: left;">
+          <p class="chai-text-xs chai-text-muted chai-mb-2 chai-uppercase chai-tracking-wide chai-font-semibold">Bas itna karo</p>
+          <p style="font-family: monospace; font-size: 14px; color: #2c1a0e; line-height: 1.8; margin: 0;">
+            <span style="color: #a07850">&lt;script</span>
+            <span style="color: #7c4a1e"> src</span>
+            <span style="color: #a07850">=</span>
+            <span style="color: #16a34a">"./chai.js"</span>
+            <span style="color: #a07850">&gt;&lt;/script&gt;</span>
+            <br/>
+            <br/>
+            <span style="color: #a07850">&lt;div</span>
+            <span style="color: #7c4a1e"> class</span>
+            <span style="color: #a07850">=</span>
+            <span style="color: #16a34a">"chai-card chai-p-6 chai-text-center"</span>
+            <span style="color: #a07850">&gt;</span>
+            <br/>
+            &nbsp;&nbsp;<span style="color: #a07850">&lt;p</span>
+            <span style="color: #7c4a1e"> class</span>
+            <span style="color: #a07850">=</span>
+            <span style="color: #16a34a">"chai-text-md chai-font-bold"</span>
+            <span style="color: #a07850">&gt;</span>
+            Hello ☕
+            <span style="color: #a07850">&lt;/p&gt;</span>
+            <br/>
+            <span style="color: #a07850">&lt;/div&gt;</span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── HOW IT WORKS ─────────────────── -->
+    <section class="chai-section chai-bg-warm">
+      <div class="chai-container">
+        <h2 class="chai-text-lg chai-font-bold chai-text-dark chai-text-center chai-mb-2">Kaam kaise karta hai?</h2>
+        <p class="chai-text-sm chai-text-muted chai-text-center chai-mb-8">Under the hood - teen simple steps</p>
+
+        <div class="chai-flex chai-gap-6 chai-flex-wrap chai-justify-center">
+          <div class="chai-card chai-text-center" style="flex: 1; min-width: 220px; max-width: 260px;">
+            <div style="font-size: 32px; margin-bottom: 12px;">📄</div>
+            <h3 class="chai-font-semibold chai-text-dark chai-mb-2">1. Script add karo</h3>
+            <p class="chai-text-sm chai-text-muted">Apne HTML ke bottom mein ek <span class="chai-code">&lt;script&gt;</span> tag lagao. Bas.</p>
+          </div>
+          <div class="chai-card chai-text-center" style="flex: 1; min-width: 220px; max-width: 260px;">
+            <div style="font-size: 32px; margin-bottom: 12px;">🏷️</div>
+            <h3 class="chai-font-semibold chai-text-dark chai-mb-2">2. Classes likho</h3>
+            <p class="chai-text-sm chai-text-muted"><span class="chai-code">chai-</span> prefix se apne elements pe classes lagao.</p>
+          </div>
+          <div class="chai-card chai-text-center" style="flex: 1; min-width: 220px; max-width: 260px;">
+            <div style="font-size: 32px; margin-bottom: 12px;">✨</div>
+            <h3 class="chai-font-semibold chai-text-dark chai-mb-2">3. Style milega</h3>
+            <p class="chai-text-sm chai-text-muted">JS khud DOM scan karta hai aur <span class="chai-code">element.style</span> pe inject karta hai.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── ALL CLASSES ──────────────────── -->
+    <section id="classes" class="chai-section">
+      <div class="chai-container">
+        <h2 class="chai-text-lg chai-font-bold chai-text-dark chai-text-center chai-mb-2">Saari Classes</h2>
+        <p class="chai-text-sm chai-text-muted chai-text-center chai-mb-8">Abhi yeh sab available hai chai CSS mein</p>
+
+        <div class="chai-flex chai-flex-col chai-gap-4">
+
+          <!-- Layout & Flex -->
+          <div class="chai-card">
+            <h3 class="chai-font-semibold chai-text-brown chai-mb-1">🧱 Layout & Flexbox</h3>
+            <p class="chai-text-xs chai-text-muted chai-mb-4">Page structure, flex, gap, sizing</p>
+            <div class="chai-flex chai-flex-wrap chai-gap-2">
+              <span class="chai-tag">chai-container</span>
+              <span class="chai-tag">chai-section</span>
+              <span class="chai-tag">chai-full-center</span>
+              <span class="chai-tag">chai-w-full</span>
+              <span class="chai-tag">chai-h-screen</span>
+              <span class="chai-tag">chai-flex</span>
+              <span class="chai-tag">chai-inline-flex</span>
+              <span class="chai-tag">chai-flex-col</span>
+              <span class="chai-tag">chai-flex-wrap</span>
+              <span class="chai-tag">chai-flex-1</span>
+              <span class="chai-tag">chai-justify-center</span>
+              <span class="chai-tag">chai-justify-between</span>
+              <span class="chai-tag">chai-justify-end</span>
+              <span class="chai-tag">chai-items-center</span>
+              <span class="chai-tag">chai-items-start</span>
+              <span class="chai-tag">chai-gap-1</span>
+              <span class="chai-tag">chai-gap-2</span>
+              <span class="chai-tag">chai-gap-4</span>
+              <span class="chai-tag">chai-gap-6</span>
+              <span class="chai-tag">chai-gap-8</span>
+            </div>
+          </div>
+
+          <!-- Spacing -->
+          <div class="chai-card">
+            <h3 class="chai-font-semibold chai-text-brown chai-mb-1">📦 Spacing</h3>
+            <p class="chai-text-xs chai-text-muted chai-mb-4">Padding aur margin - p-1 = 4px, p-2 = 8px, p-4 = 16px...</p>
+            <div class="chai-flex chai-flex-wrap chai-gap-2">
+              <span class="chai-tag">chai-p-1</span>
+              <span class="chai-tag">chai-p-2</span>
+              <span class="chai-tag">chai-p-3</span>
+              <span class="chai-tag">chai-p-4</span>
+              <span class="chai-tag">chai-p-6</span>
+              <span class="chai-tag">chai-p-8</span>
+              <span class="chai-tag">chai-px-4</span>
+              <span class="chai-tag">chai-px-6</span>
+              <span class="chai-tag">chai-py-2</span>
+              <span class="chai-tag">chai-py-3</span>
+              <span class="chai-tag">chai-py-4</span>
+              <span class="chai-tag">chai-m-2</span>
+              <span class="chai-tag">chai-m-4</span>
+              <span class="chai-tag">chai-mx-auto</span>
+              <span class="chai-tag">chai-mb-2</span>
+              <span class="chai-tag">chai-mb-4</span>
+              <span class="chai-tag">chai-mb-6</span>
+              <span class="chai-tag">chai-mb-8</span>
+              <span class="chai-tag">chai-mt-2</span>
+              <span class="chai-tag">chai-mt-4</span>
+              <span class="chai-tag">chai-mt-6</span>
+            </div>
+          </div>
+
+          <!-- Typography -->
+          <div class="chai-card">
+            <h3 class="chai-font-semibold chai-text-brown chai-mb-1">🔠 Typography</h3>
+            <p class="chai-text-xs chai-text-muted chai-mb-4">Font size, weight, alignment aur text utilities</p>
+            <div class="chai-flex chai-flex-wrap chai-gap-2">
+              <span class="chai-tag">chai-text-xs</span>
+              <span class="chai-tag">chai-text-sm</span>
+              <span class="chai-tag">chai-text-base</span>
+              <span class="chai-tag">chai-text-md</span>
+              <span class="chai-tag">chai-text-lg</span>
+              <span class="chai-tag">chai-text-xl</span>
+              <span class="chai-tag">chai-text-2xl</span>
+              <span class="chai-tag">chai-font-light</span>
+              <span class="chai-tag">chai-font-normal</span>
+              <span class="chai-tag">chai-font-medium</span>
+              <span class="chai-tag">chai-font-semibold</span>
+              <span class="chai-tag">chai-font-bold</span>
+              <span class="chai-tag">chai-text-center</span>
+              <span class="chai-tag">chai-text-left</span>
+              <span class="chai-tag">chai-uppercase</span>
+              <span class="chai-tag">chai-capitalize</span>
+              <span class="chai-tag">chai-italic</span>
+              <span class="chai-tag">chai-underline</span>
+              <span class="chai-tag">chai-tracking-wide</span>
+              <span class="chai-tag">chai-leading-tight</span>
+              <span class="chai-tag">chai-leading-loose</span>
+            </div>
+          </div>
+
+          <!-- Colors -->
+          <div class="chai-card">
+            <h3 class="chai-font-semibold chai-text-brown chai-mb-1">🎨 Colors</h3>
+            <p class="chai-text-xs chai-text-muted chai-mb-4">Backgrounds aur text colors - chai ki warm palette</p>
+            <div class="chai-flex chai-flex-wrap chai-gap-2">
+              <span class="chai-tag">chai-bg-cream</span>
+              <span class="chai-tag">chai-bg-warm</span>
+              <span class="chai-tag">chai-bg-brown</span>
+              <span class="chai-tag">chai-bg-dark-brown</span>
+              <span class="chai-tag">chai-bg-white</span>
+              <span class="chai-tag">chai-bg-light</span>
+              <span class="chai-tag">chai-bg-muted</span>
+              <span class="chai-tag">chai-text-white</span>
+              <span class="chai-tag">chai-text-brown</span>
+              <span class="chai-tag">chai-text-dark</span>
+              <span class="chai-tag">chai-text-muted</span>
+              <span class="chai-tag">chai-text-cream</span>
+              <span class="chai-tag">chai-text-gray</span>
+              <span class="chai-tag">chai-text-danger</span>
+              <span class="chai-tag">chai-text-success</span>
+            </div>
+          </div>
+
+          <!-- Border & Shadow -->
+          <div class="chai-card">
+            <h3 class="chai-font-semibold chai-text-brown chai-mb-1">🔲 Border & Shadow</h3>
+            <p class="chai-text-xs chai-text-muted chai-mb-4">Radius, borders, aur box shadows</p>
+            <div class="chai-flex chai-flex-wrap chai-gap-2">
+              <span class="chai-tag">chai-rounded-xs</span>
+              <span class="chai-tag">chai-rounded-sm</span>
+              <span class="chai-tag">chai-rounded-md</span>
+              <span class="chai-tag">chai-rounded-lg</span>
+              <span class="chai-tag">chai-rounded-xl</span>
+              <span class="chai-tag">chai-rounded-full</span>
+              <span class="chai-tag">chai-border</span>
+              <span class="chai-tag">chai-border-2</span>
+              <span class="chai-tag">chai-border-brown</span>
+              <span class="chai-tag">chai-border-b</span>
+              <span class="chai-tag">chai-border-none</span>
+              <span class="chai-tag">chai-shadow-sm</span>
+              <span class="chai-tag">chai-shadow</span>
+              <span class="chai-tag">chai-shadow-lg</span>
+            </div>
+          </div>
+
+          <!-- Components -->
+          <div class="chai-card">
+            <h3 class="chai-font-semibold chai-text-brown chai-mb-1">🔘 Components</h3>
+            <p class="chai-text-xs chai-text-muted chai-mb-4">Ready-made pieces - card, button, tag, badge, input aur zyada</p>
+            <div class="chai-flex chai-flex-wrap chai-gap-2">
+              <span class="chai-tag">chai-card</span>
+              <span class="chai-tag">chai-card-warm</span>
+              <span class="chai-tag">chai-btn</span>
+              <span class="chai-tag">chai-btn-primary</span>
+              <span class="chai-tag">chai-btn-outline</span>
+              <span class="chai-tag">chai-btn-ghost</span>
+              <span class="chai-tag">chai-btn-sm</span>
+              <span class="chai-tag">chai-btn-lg</span>
+              <span class="chai-tag">chai-btn-danger</span>
+              <span class="chai-tag">chai-tag</span>
+              <span class="chai-tag">chai-badge</span>
+              <span class="chai-tag">chai-badge-warm</span>
+              <span class="chai-tag">chai-input</span>
+              <span class="chai-tag">chai-textarea</span>
+              <span class="chai-tag">chai-label</span>
+              <span class="chai-tag">chai-avatar</span>
+              <span class="chai-tag">chai-avatar-lg</span>
+              <span class="chai-tag">chai-code</span>
+              <span class="chai-tag">chai-divider</span>
+            </div>
+          </div>
+
+          <!-- Utilities -->
+          <div class="chai-card">
+            <h3 class="chai-font-semibold chai-text-brown chai-mb-1">✨ Utilities & Dark Mode</h3>
+            <p class="chai-text-xs chai-text-muted chai-mb-4">Transitions, display, position, dark mode aur baaki sab</p>
+            <div class="chai-flex chai-flex-wrap chai-gap-2">
+              <span class="chai-tag">chai-transition</span>
+              <span class="chai-tag">chai-transition-slow</span>
+              <span class="chai-tag">chai-transition-fast</span>
+              <span class="chai-tag">chai-cursor-pointer</span>
+              <span class="chai-tag">chai-hidden</span>
+              <span class="chai-tag">chai-block</span>
+              <span class="chai-tag">chai-inline-block</span>
+              <span class="chai-tag">chai-sticky</span>
+              <span class="chai-tag">chai-fixed</span>
+              <span class="chai-tag">chai-relative</span>
+              <span class="chai-tag">chai-overflow-hidden</span>
+              <span class="chai-tag">chai-opacity-50</span>
+              <span class="chai-tag">chai-opacity-75</span>
+              <span class="chai-tag">chai-select-none</span>
+              <span class="chai-tag">chai-truncate</span>
+              <span class="chai-tag">chai-list-none</span>
+              <span class="chai-tag">chai-z-10</span>
+              <span class="chai-tag">chai-z-50</span>
+              <span class="chai-tag">chai-dark-bg</span>
+              <span class="chai-tag">chai-dark-card</span>
+              <span class="chai-tag">chai-dark-text</span>
+              <span class="chai-tag">chai-dark-muted</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── PLAYGROUND ───────────────────── -->
+    <section id="playground" class="chai-section chai-bg-warm">
+      <div class="chai-container">
+        <h2 class="chai-text-lg chai-font-bold chai-text-dark chai-text-center chai-mb-2">Live Playground</h2>
+        <p class="chai-text-sm chai-text-muted chai-text-center chai-mb-8">
+          Niche input mein chai- class likho - box pe turant apply ho jaayega
+        </p>
+
+        <div class="chai-flex chai-gap-6 chai-flex-wrap">
+
+          <!-- Input side -->
+          <div style="flex: 1; min-width: 260px;">
+            <label class="chai-label">Classes daalo (space se separate karo)</label>
+            <input
+              id="playInput"
+              class="chai-input chai-mb-4"
+              type="text"
+              placeholder="e.g. chai-bg-brown chai-text-white chai-p-4 chai-rounded-lg"
+            />
+            <button id="applyBtn" class="chai-btn chai-btn-primary chai-transition chai-w-full">Apply ☕</button>
+            <button id="resetBtn" class="chai-btn chai-btn-outline chai-transition chai-w-full chai-mt-2">Reset</button>
+
+            <!-- Quick presets -->
+            <p class="chai-text-xs chai-text-muted chai-mt-4 chai-mb-2 chai-uppercase chai-tracking-wide chai-font-semibold">Quick presets</p>
+            <div class="chai-flex chai-flex-wrap chai-gap-2">
+              <span class="chai-tag chai-cursor-pointer" onclick="setPreset('chai-card chai-bg-warm chai-text-dark')">Warm card</span>
+              <span class="chai-tag chai-cursor-pointer" onclick="setPreset('chai-bg-brown chai-text-white chai-p-6 chai-rounded-lg')">Brown box</span>
+              <span class="chai-tag chai-cursor-pointer" onclick="setPreset('chai-btn chai-btn-primary chai-shadow')">Button</span>
+              <span class="chai-tag chai-cursor-pointer" onclick="setPreset('chai-badge chai-text-cream')">Badge</span>
+            </div>
+          </div>
+
+          <!-- Preview side -->
+          <div style="flex: 1; min-width: 260px;">
+            <p class="chai-label">Preview</p>
+            <div style="background: #fff8f0; border: 1px solid #e8d5bc; border-radius: 12px; padding: 32px; min-height: 160px; display: flex; align-items: center; justify-content: center;">
+              <div id="playBox" style="padding: 16px; border-radius: 8px; transition: all 0.2s ease; font-family: system-ui, sans-serif;">
+                ☕ Yahan dekho
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── EXTEND API ────────────────────── -->
+    <section class="chai-section">
+      <div class="chai-container">
+        <div class="chai-flex chai-gap-6 chai-flex-wrap chai-items-center">
+          <div style="flex: 1; min-width: 260px;">
+            <span class="chai-badge-warm chai-mb-4">Pro tip</span>
+            <h2 class="chai-text-lg chai-font-bold chai-text-dark chai-mb-3 chai-mt-2">Apni classes add karo</h2>
+            <p class="chai-text-sm chai-text-muted chai-mb-4">
+              <span class="chai-code">chai.extend()</span> se tum runtime mein apni khud ki custom utility classes add kar sakte ho.
+              Koi build step nahi, bas ek JS object.
+            </p>
+            <p class="chai-text-xs chai-text-muted">
+              Aur agar koi unknown <span class="chai-code">chai-</span> class use karoge toh console mein warning milegi.
+            </p>
+          </div>
+          <div class="chai-card" style="flex: 1; min-width: 260px; font-family: monospace; font-size: 13px; line-height: 2; color: #2c1a0e;">
+            <span style="color: #a07850">chai</span>.<span style="color: #7c4a1e">extend</span>({<br/>
+            &nbsp;&nbsp;<span style="color: #16a34a">"chai-my-btn"</span>: <span style="color: #16a34a">"background: purple; color: white; padding: 8px 16px"</span>,<br/>
+            &nbsp;&nbsp;<span style="color: #16a34a">"chai-neon"</span>: <span style="color: #16a34a">"color: #39ff14; font-weight: bold"</span>,<br/>
+            });<br/>
+            <br/>
+            <span style="color: #a07850">chai</span>.<span style="color: #7c4a1e">scan</span>(); <span style="color: #a07850">// re-apply</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── FOOTER ────────────────────────── -->
+    <footer class="chai-bg-dark-brown chai-py-6 chai-text-center">
+      <p class="chai-text-sm chai-text-cream">
+        ☕ chai CSS - Koi CSS file nahi. Sirf JS, DOM, aur vibes.
+      </p>
+    </footer>
+
+    <script src="./chai.js"></script>
+    <script>
+      // ── Dark mode toggle ──────────────────
+      const darkBtn = document.getElementById("darkBtn");
+      let isDark = false;
+
+      // Colors that need to flip in dark mode
+      const darkOverrides = {
+        "chai-text-dark":  "color: #fdf6ec",
+        "chai-text-brown": "color: #e8b48a",
+        "chai-text-muted": "color: #c8956a",
+        "chai-text-light": "color: #a07850",
+        "chai-bg-cream":   "background-color: #1a0f07",
+        "chai-bg-warm":    "background-color: #2c1a0e",
+        "chai-bg-light":   "background-color: #221208",
+        "chai-border-b":   "border-bottom: 1px solid #3a2010",
+        "chai-code":       "background: #3a2010; color: #e8b48a; padding: 2px 8px; border-radius: 6px; font-family: monospace; font-size: 13px",
+        "chai-tag":        "background: #3a2010; color: #e8b48a; padding: 4px 12px; border-radius: 999px; font-size: 13px; font-weight: 500; display: inline-block",
+        "chai-input":      "padding: 10px 14px; border: 1px solid #4a2e1a; border-radius: 10px; font-size: 14px; outline: none; background: #2c1a0e; color: #fdf6ec; width: 100%; box-sizing: border-box",
+        "chai-label":      "font-size: 13px; font-weight: 600; color: #e8b48a; display: block; margin-bottom: 6px",
+      };
+
+      function applyDark() {
+        // Extend chai with dark overrides
+        chai.extend(darkOverrides);
+
+        // Reset ALL inline styles and re-apply
+        document.querySelectorAll('[class*="chai-"]').forEach(el => {
+          el.style.cssText = "";
+        });
+
+        // Add dark classes to cards and sections
+        document.body.classList.add("chai-dark-bg");
+        document.querySelectorAll(".chai-card, .chai-card-warm").forEach(el => {
+          el.classList.add("chai-dark-card");
+        });
+        document.querySelectorAll("nav").forEach(el => {
+          el.style.backgroundColor = "#1a0f07";
+          el.style.borderBottomColor = "#3a2010";
+        });
+        document.querySelectorAll("section").forEach(el => {
+          if (el.classList.contains("chai-bg-warm")) {
+            el.style.backgroundColor = "#2c1a0e";
+          }
+        });
+
+        chai.scan();
+      }
+
+      function applyLight() {
+        // Restore original light styles
+        const lightOverrides = {
+          "chai-text-dark":  "color: #2c1a0e",
+          "chai-text-brown": "color: #7c4a1e",
+          "chai-text-muted": "color: #a07850",
+          "chai-text-light": "color: #d4a574",
+          "chai-bg-cream":   "background-color: #fdf6ec",
+          "chai-bg-warm":    "background-color: #f5e6d0",
+          "chai-bg-light":   "background-color: #fefaf5",
+          "chai-border-b":   "border-bottom: 1px solid #e8d5bc",
+          "chai-code":       "background: #f5e6d0; color: #7c4a1e; padding: 2px 8px; border-radius: 6px; font-family: monospace; font-size: 13px",
+          "chai-tag":        "background: #f5e6d0; color: #7c4a1e; padding: 4px 12px; border-radius: 999px; font-size: 13px; font-weight: 500; display: inline-block",
+          "chai-input":      "padding: 10px 14px; border: 1px solid #e8d5bc; border-radius: 10px; font-size: 14px; outline: none; background: #fff8f0; color: #2c1a0e; width: 100%; box-sizing: border-box",
+          "chai-label":      "font-size: 13px; font-weight: 600; color: #7c4a1e; display: block; margin-bottom: 6px",
+        };
+        chai.extend(lightOverrides);
+
+        // Reset ALL inline styles
+        document.querySelectorAll('[class*="chai-"]').forEach(el => {
+          el.style.cssText = "";
+        });
+
+        document.body.classList.remove("chai-dark-bg");
+        document.querySelectorAll(".chai-card, .chai-card-warm").forEach(el => {
+          el.classList.remove("chai-dark-card");
+        });
+        document.querySelectorAll("nav").forEach(el => {
+          el.style.cssText = "";
+        });
+        document.querySelectorAll("section").forEach(el => {
+          el.style.cssText = "";
+        });
+
+        chai.scan();
+      }
+
+      darkBtn.addEventListener("click", () => {
+        isDark = !isDark;
+        darkBtn.textContent = isDark ? "☀️ Light" : "🌙 Dark";
+        isDark ? applyDark() : applyLight();
+      });
+
+      // ── Playground ───────────────────────
+      const playInput = document.getElementById("playInput");
+      const playBox   = document.getElementById("playBox");
+      const applyBtn  = document.getElementById("applyBtn");
+      const resetBtn  = document.getElementById("resetBtn");
+
+      applyBtn.addEventListener("click", () => {
+        const raw = playInput.value.trim();
+        if (!raw) return;
+
+        // Reset inline styles
+        playBox.style.cssText = "padding: 16px; border-radius: 8px; transition: all 0.2s ease; font-family: system-ui, sans-serif;";
+
+        // Set new classes and apply
+        playBox.className = raw;
+        chai.apply(playBox);
+      });
+
+      resetBtn.addEventListener("click", () => {
+        playBox.className = "";
+        playBox.style.cssText = "padding: 16px; border-radius: 8px; transition: all 0.2s ease; font-family: system-ui, sans-serif;";
+        playInput.value = "";
+      });
+
+      function setPreset(classes) {
+        playInput.value = classes;
+        applyBtn.click();
+      }
+    </script>
+
+  </body>
+</html>
